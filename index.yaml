@@ -3,7 +3,7 @@ entries:
   reportportal:
   - apiVersion: v1
     appVersion: "5.0"
-    created: "2020-04-29T12:39:11.725808-04:00"
+    created: "2020-04-29T14:31:20.121635-04:00"
     dependencies:
     - condition: postgresql.installdep.enable
       name: postgresql
@@ -22,7 +22,7 @@ entries:
       repository: https://kubernetes-charts.storage.googleapis.com/
       version: 2.5.12
     description: ReportPortal.io AI-powered Test Automation Dashboard
-    digest: f9399492199ea06a394d2b09b91d8c494b55ce4822ffc017ad7e72d1de7a0bbe
+    digest: e8d275470b3c3ab7bdb2f9009221a29e003325e98a683a41d49432f94e4e45b3
     keywords:
     - reportportal
     maintainers:
@@ -34,4 +34,4 @@ entries:
     urls:
     - reportportal-5.1.tgz
     version: "5.1"
-generated: "2020-04-29T12:39:11.716663-04:00"
+generated: "2020-04-29T14:31:20.107465-04:00"
