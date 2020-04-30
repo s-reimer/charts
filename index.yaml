@@ -3,7 +3,40 @@ entries:
   reportportal:
   - apiVersion: v1
     appVersion: "5.0"
-    created: "2020-04-29T18:18:42.157061-04:00"
+    created: "2020-04-30T09:35:20.319236-04:00"
+    dependencies:
+    - condition: postgresql.installdep.enable
+      name: postgresql
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 8.6.2
+    - condition: rabbitmq.installdep.enable
+      name: rabbitmq-ha
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 1.18.0
+    - condition: elasticsearch.installdep.enable
+      name: elasticsearch
+      repository: https://helm.elastic.co
+      version: 7.6.1
+    - condition: minio.installdep.enable
+      name: minio
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 2.5.12
+    description: ReportPortal.io AI-powered Test Automation Dashboard
+    digest: 9dbc8c08e04cb45912a31ac937f4381045f49638d6d03da299c291b3de24450b
+    keywords:
+    - reportportal
+    maintainers:
+    - email: support@reportportal.io
+      name: reportportal
+    name: reportportal
+    sources:
+    - https://github.com/reportportal/k8s/reportportal
+    urls:
+    - reportportal-5.5.tgz
+    version: "5.5"
+  - apiVersion: v1
+    appVersion: "5.0"
+    created: "2020-04-30T09:35:20.309966-04:00"
     dependencies:
     - condition: postgresql.installdep.enable
       name: postgresql
@@ -36,7 +69,7 @@ entries:
     version: "5.4"
   - apiVersion: v1
     appVersion: "5.0"
-    created: "2020-04-29T18:18:42.146273-04:00"
+    created: "2020-04-30T09:35:20.299607-04:00"
     dependencies:
     - condition: postgresql.installdep.enable
       name: postgresql
@@ -69,7 +102,7 @@ entries:
     version: "5.3"
   - apiVersion: v1
     appVersion: "5.0"
-    created: "2020-04-29T18:18:42.136316-04:00"
+    created: "2020-04-30T09:35:20.288521-04:00"
     dependencies:
     - condition: postgresql.installdep.enable
       name: postgresql
@@ -102,7 +135,7 @@ entries:
     version: "5.2"
   - apiVersion: v1
     appVersion: "5.0"
-    created: "2020-04-29T18:18:42.123134-04:00"
+    created: "2020-04-30T09:35:20.276517-04:00"
     dependencies:
     - condition: postgresql.installdep.enable
       name: postgresql
@@ -133,4 +166,4 @@ entries:
     urls:
     - reportportal-5.1.tgz
     version: "5.1"
-generated: "2020-04-29T18:18:42.112239-04:00"
+generated: "2020-04-30T09:35:20.259433-04:00"
